@@ -1,0 +1,58 @@
+* {padding: 0px; margin: 0px;}
+
+#navbar {
+    overflow: hidden;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+#navbar a {
+    display: inline-block;
+    text-align: center;
+    height: 14px;
+    padding: 14px 16px;
+    margin-left: 23px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover{
+    background-color: black;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
+#localidades {
+    margin-top: 17px;
+}
+
+#localidades button{
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    float: left;    
+    margin-left: 16px;
+
+}
+
+#localidades button:hover {
+    background-color: black;
+    color: white;
+
+}
