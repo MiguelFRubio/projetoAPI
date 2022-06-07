@@ -1,17 +1,27 @@
 * {padding: 0px; margin: 0px;}
 
+html {
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(157deg, #b8ecf5, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #navbar {
     overflow: hidden;
     background-color: lightblue;
-    padding: 15px;
 }
 
 #navbar a {
     display: inline-block;
     text-align: center;
-    height: 14px;
+    font-size: 23px;
+    height: 25px;
     padding: 14px 16px;
-    margin-left: 23px;
+    margin-left: 33px;
     text-decoration: none;
     color: black;
 }
@@ -19,22 +29,16 @@
 #navbar a:hover{
     background-color: black;
     color: white;
+
 }
 
-.content {
-    padding: 16px;
-}
-
-.sticky{
-    position: fixed;
-    top:0;
+.butoes {
     width: 100%;
+    padding: 10px 10px;
+    margin: 20px 0px;
+    background-color: lightblue;
+    display:inline-block;
 }
-
-.sticky + .content {
-    padding-top: 60px;
-}
-
 
 #localidades {
     margin-top: 17px;
@@ -45,15 +49,68 @@
     border: 1px solid black;
     text-align: center;
     text-decoration: none;
-    padding: 15px 20px;
-    float: left;   
-    margin-left: 16px;
+    padding: 10px 20px;
+    margin-left: 11px;
     margin-top: 4px;
+    border-radius: 13px;
 
 }
 
 #localidades button:hover {
     background-color: black;
     color: white;
-
 }
+/*
+#previsoes {
+    display: inline-block
+}
+
+#previsoes p{
+    background-color: gray;
+    width: 18%;
+    margin-left: 2%;
+    margin-top: 100px;
+    padding: 15px 20px;
+
+}*/
+
+.previsoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+    .teste {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 100%;
+        border-radius: 15px;
+        display: inline-block;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Fjord One', serif;
+        margin-top: 50px;
+        padding-left: 1%;
+        padding-right: 1%;
+       
+    }
+
+    .teste:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .teste .tMin, .teste .tMax {
+        font-size: 1rem;
+
+    }
+
+    .teste .tMin::before {
+        content: "Temperatura Miníma:\A";
+        white-space: pre;
+        font-size: .8rem;
+    }
+
+    .teste .tMax::before {
+        content: "Temperatura Máxima:\A";
+        white-space: pre;
+        font-size: .8rem;
+    }
