@@ -60,20 +60,25 @@ function mostrarDados(e) {
         const tMin = document.createElement("h2")
         const tMax = document.createElement("h2")
         const forecastDate = document.createElement("h2")
+        const precipitaProb = document.createElement("h2")
+
 
         tMin.textContent = localidade.tMin
         tMax.textContent = localidade.tMax
         forecastDate.textContent = localidade.forecastDate
+        precipitaProb.textContent = localidade.precipitaProb
 
         tMin.classList.add("tMin")
         tMax.classList.add("tMax")
         forecastDate.classList.add("forecastDate")
+        precipitaProb.classList.add("precipitaProb")
 
         div.classList.add("teste")
 
         sectionPrevisoes.appendChild(div)
         innerDiv.appendChild(tMin)
         innerDiv.appendChild(tMax)
+        innerDiv.appendChild(precipitaProb)
         div.appendChild(forecastDate)
         div.appendChild(innerDiv)
       } 

@@ -1,6 +1,6 @@
 * {padding: 0px; margin: 0px;}
 
-html {
+html{
     height: 100%;
 }
 
@@ -8,9 +8,11 @@ body{
     background-image: linear-gradient(157deg, #b8ecf5, white);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 #navbar {
+    width: 100%;
     overflow: hidden;
     background-color: lightblue;
 }
@@ -34,14 +36,15 @@ body{
 
 .butoes {
     width: 100%;
-    padding: 10px 10px;
-    margin: 20px 0px;
+    margin-top: 20px;
     background-color: lightblue;
     display:inline-block;
+    overflow: hidden;
 }
 
 #localidades {
     margin-top: 17px;
+    padding: 20px;
 }
 
 #localidades button{
@@ -78,6 +81,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
+
   }
     .teste {
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -111,6 +115,12 @@ body{
 
     .teste .tMax::before {
         content: "Temperatura Máxima:\A";
+        white-space: pre;
+        font-size: .8rem;
+    }
+
+    .teste .precipitaProb::before {
+        content: "Chance de precipitação:\A";
         white-space: pre;
         font-size: .8rem;
     }
