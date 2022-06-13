@@ -1,16 +1,3 @@
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-//var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
 
 // Secção butões
 
@@ -61,17 +48,20 @@ function mostrarDados(e) {
         const tMax = document.createElement("h2")
         const forecastDate = document.createElement("h2")
         const precipitaProb = document.createElement("h2")
+        const imgTempo = document.createElement("img")
 
 
         tMin.textContent = localidade.tMin
         tMax.textContent = localidade.tMax
         forecastDate.textContent = localidade.forecastDate
         precipitaProb.textContent = localidade.precipitaProb
+        imgTempo.src = (`tempo/w_ic_d_${'0' +localidade.idWeatherType}anim.svg` );
 
         tMin.classList.add("tMin")
         tMax.classList.add("tMax")
         forecastDate.classList.add("forecastDate")
         precipitaProb.classList.add("precipitaProb")
+        imgTempo.classList.add("imgTempo")
 
         div.classList.add("teste")
 
@@ -79,6 +69,7 @@ function mostrarDados(e) {
         innerDiv.appendChild(tMin)
         innerDiv.appendChild(tMax)
         innerDiv.appendChild(precipitaProb)
+        innerDiv.appendChild(imgTempo)
         div.appendChild(forecastDate)
         div.appendChild(innerDiv)
       } 
@@ -86,5 +77,6 @@ function mostrarDados(e) {
 
 
     })
-}
 
+
+  }
