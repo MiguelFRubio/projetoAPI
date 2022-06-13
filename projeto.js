@@ -36,7 +36,7 @@ function mostrarDados(e) {
   const idGlobalBtn = target.getAttribute("data-distrito")
   sectionPrevisoes.innerHTML = ""
 
-  fetch(`http://api.ipma.pt/open-data/forecast/meteorology/cities/daily/${idGlobalBtn}.json`)
+  fetch(`https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/${idGlobalBtn}.json`)
     .then(res => res.json())
     .then(data => {
 
